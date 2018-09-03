@@ -1,1 +1,1 @@
-var prod1 = {}
+var produto = {}
