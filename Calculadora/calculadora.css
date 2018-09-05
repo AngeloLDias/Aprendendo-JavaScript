@@ -1,0 +1,492 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    background-image: url("../img/2015-03-16_0002.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover; 
+
+
+}
+#orangee{
+    background-color: orange;
+    width: 100%;
+    padding-top: 100;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex; 
+    flex-direction: column; 
+    -webkit-box-direction: normal; 
+    -webkit-box-orient: vertical; 
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center; 
+}
+
+/* FONTES USADAS */
+
+@font-face {
+    font-family: menu;
+    src: url(../font/COMFORTAA.LIGHT.TTF);
+}
+
+@font-face {
+    font-family: footer;
+    src: url(../font/ORATORSTD.OTF)
+}
+
+@font-face {
+    font-family: lista;
+    src: url(../font/TT0288M_.TTF)
+}
+@font-face{
+    font-family: title;
+    src: url(../font/menulis.ttf);
+}
+@font-face{
+    font-family: pixel;
+    src: url(../font/VCR_OSD_MONO_1.001.ttf);
+}
+@font-face{
+    font-family: escolar;
+    src: url(../font/Letters.ttf);
+}
+
+/*---------------- LOGO E TITULO DO MENU ------------------*/
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 55px;
+    padding: 10px;
+}
+
+h1 {
+    font-family: escolar;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #fff;
+    font-size: 35px;
+}
+.h12{
+    color: red;
+}
+
+nav {
+    height: 80px;
+    background-color:#000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav li {
+    padding: 30px;
+    transition-duration: 0.5s;
+    background-color: transparent;
+}
+
+/* nav li.active {
+    background-color: #3cb2b7;
+} */
+
+nav li:hover {
+    opacity: 0.8;
+    transition-duration: 0.2s;
+    background-color: #23367e;
+}
+
+nav a {
+    font-size: 22px;
+    color: #fff;
+    font-family: escolar;
+    text-decoration: none;
+}
+.active{
+    background-color: #23367e;
+}
+/* --------------------TEXTO KEEP CALM--------------------- */
+
+main {
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main p {
+    color: #fff;
+    font-family: menu;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 90px 30px 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid #fff 2px;
+    /* width: 30%; */
+}
+
+/* --------------- FOOTER -------------- */
+
+footer {
+    min-height: calc(40vh - 230px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #000;
+    padding: 14px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-family: footer;
+    transition: 0.1s;
+    font-size: 16px;
+}
+
+
+
+.footer-col {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.last {
+    justify-content: flex-end;
+}
+
+.first {
+    justify-content: flex-start;
+}
+
+/* -------------- ICONE REDES SOCIAIS ------------------- */
+
+/* .footer-col .icon {
+    transition: 0.1s;
+    padding: 20px;
+    height: 30px;
+    background-color:z rgba(59, 89, 151);
+
+} */
+.footer-col .icon2 {
+    transition: 0.1s;
+    padding: 20px;
+    height: 30px;
+    background-color: rgba(81, 126, 165);
+
+
+}
+.footer-col .icon3 {
+    transition: 0.1s;
+    padding: 20px;
+    height: 30px;
+    background-color: rgba(66, 153, 253);
+
+}
+
+.footer-col .icon:hover {
+    transition-duration: 0.2s;
+    background-color: rgba(59, 89, 151, 0.5);
+}
+.footer-col .icon2:hover {
+    transition-duration: 0.5s;
+    background-color: rgba(66, 153, 253,);
+}
+.footer-col .icon3:hover {
+    transition-duration: 0.5s;
+    background-color: rgba(81, 126, 165,);
+}
+div td{
+    text-align: left;
+}
+.icon11{
+   
+    width: 48px;
+    height: 48px;
+    border: 20px;
+
+}
+.icon11:hover{
+    opacity: 0.5;
+}
+#logo-footer {
+    width: 120px;
+}
+
+/* ---------------------- MENU INTERATIVO ------------------------ */
+
+
+nav label {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+ 
+#interativo {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+.barra {
+    background-color: #191919;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+    display: none;
+}
+
+.aaaaa {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+.linkes {
+    background-color: #333333;
+    padding: 20px;
+    font-family: escolar;
+    font-size: 20pt;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #000; 
+}
+.linkes:hover {
+    transition: 0.2s;
+    background-color:  #23367e;
+} 
+
+
+
+article a{
+    
+text-decoration: none;        
+}
+
+#check:checked ~ .barra {
+    transform: translateX(300px);
+}
+#interativo{
+    display: none;
+}
+
+/* --------------------- CALCULADORA ----------------------- */
+.h11{
+    font-size: 80px;
+}
+.botao{
+    font-family: title;
+    margin: 5px;
+    background-color: rgba(0, 202, 238,0.9);
+    border: none;
+    width: 300px;
+    height: 80px;
+    margin-left:25px;
+    font-size: 300%;
+    color: black;
+    }
+.visor25{
+    background-color: rgba(144, 150, 144,0.1);
+    color: white;
+    display: flex;
+    flex-direction: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 27px;
+    width: 95%;
+    height: 100px;
+    font-size: 80px;
+    border: solid gray;
+
+}
+.botao:hover{
+    transition: 0.1s;
+    opacity: 0.7;
+}
+
+.botao2{
+    font-family: title;
+    margin: 5px;
+    background-color: #2f7e23;
+    opacity: 0.9;
+
+    border: none;
+    width: 300px;
+    height: 80px;
+    margin-left:25px;
+    font-size: 700%;
+    color: black;
+}
+.botao2:hover{
+    transition: 0.1s;
+    opacity: 0.7;
+}
+.botao3{
+    font-family: title;
+    margin: 5px;
+    background-color: rgba(238, 130, 0,0.8);
+    border: none;
+    width: 300px;
+    height: 80px;
+    margin-left:25px;
+    font-size: 350%;
+    color: black;
+
+}
+.botao3:hover{
+    transition: 0.1s;
+    opacity: 0.7;
+}
+.botao4{
+    font-family: title;
+    margin: 5px;
+    background-color: #2f7e23;
+    opacity: 0.9;
+    border: none;
+    width: 300px;
+    height: 80px;
+    margin-left:25px;
+    font-size: 350%;
+    color: black;
+
+}
+.botao4:hover{
+    transition: 0.1s;
+    opacity: 0.7;
+}
+.botao5{
+    font-family: title;
+    margin: 5px;
+    background-color: #605c5c;
+   
+    border: none;
+    width: 300px;
+    height: 80px;
+    margin-left:25px;
+    font-size: 350%;
+    color: black;
+
+}
+.botao5:hover{
+    transition: 0.1s;
+    opacity: 0.7;
+}
+.calc{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.calc > .botao3{
+    align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-size: cover;
+        background-color: black;
+        background-image: url("../img/2015-03-16_0002.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover; 
+    }    
+    nav{
+        justify-content: center;
+    }
+    #interativo{
+        margin-top: -0px;
+        display: block;
+        margin-left: -23px
+
+    }
+    .logosum{
+        display: none;
+        opacity: 0;
+    }
+    .menu {
+        display: none;
+    }
+    article label {
+        display: block;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    .footer-col {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .last,
+    .first {
+        justify-content: center;
+    }
+    #logo-footer {
+        display: none;
+    }
+    .iconinter {
+        color: white;
+        font-size: 30px;
+        padding: 15px;
+    }
+    main {
+        padding: 30px;
+    }
+    main p {
+        padding: 20px 30px;
+    }
+    .barra{
+        display: block;
+    }
+    .botao,.botao2,.botao3,.botao4,.botao5{
+        font-size: 35px;
+        width: 60px;
+        height: 60px;
+        margin-bottom:10px; 
+        position: relative;
+    }
+    .visor25{
+        width: 330px;
+    }
+    }
