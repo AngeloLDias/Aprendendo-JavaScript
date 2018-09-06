@@ -13,28 +13,29 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
-    -o-background-size: cover; 
-
-
+    -o-background-size: cover;
 }
 
 /* --------------------- CALCULADORA ----------------------- */
-.h11{
+.h11 {
     font-size: 80px;
 }
-.botao{
-    font-family: title;
+
+.botao {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
-    background-color: rgba(0, 202, 238,0.9);
+    background-color: rgba(51, 51, 51, 0.5);
     border: none;
     width: 300px;
     height: 80px;
-    margin-left:25px;
+    margin-left: 25px;
     font-size: 300%;
-    color: black;
-    }
-.visor25{
-    background-color: rgba(144, 150, 144,0.1);
+    color: white;
+
+}
+
+.visor25 {
+    background-color: rgba(144, 150, 144, 0.1);
     color: white;
     display: flex;
     flex-direction: center;
@@ -45,47 +46,52 @@ body {
     height: 100px;
     font-size: 80px;
     border: solid gray;
-
 }
-.botao:hover{
+
+.botao:hover {
     transition: 0.1s;
-    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
 }
 
-.botao-multiplicacao{
+.botao-multiplicacao {
     font-family: title;
     margin: 5px;
     background-color: #2f7e23;
     opacity: 0.9;
-
     border: none;
     width: 300px;
     height: 80px;
-    margin-left:25px;
+    margin-left: 25px;
     font-size: 500%;
     color: black;
 }
-.botao-multiplicacao:hover{
+
+.botao-multiplicacao:hover {
     transition: 0.1s;
     opacity: 0.7;
 }
-.botao-igualdade{
+
+.botao-igualdade {
     font-family: title;
     margin: 5px;
-    background-color: rgba(238, 130, 0,0.8);
+    background-color: rgba(238, 130, 0, 0.8);
     border: none;
     width: 300px;
     height: 80px;
-    margin-left:25px;
+    margin-left: 25px;
     font-size: 350%;
     color: black;
-
 }
-.botao-igualdade:hover{
+
+.botao-igualdade:hover {
     transition: 0.1s;
     opacity: 0.7;
 }
-.botao-divisao,.botao-subtracao,.botao-adicao{
+
+.botao-divisao,
+.botao-subtracao,
+.botao-adicao {
     font-family: title;
     margin: 5px;
     background-color: #2f7e23;
@@ -93,45 +99,49 @@ body {
     border: none;
     width: 300px;
     height: 80px;
-    margin-left:25px;
+    margin-left: 25px;
     font-size: 350%;
     color: black;
-
 }
-.botao-divisao:hover,.botao-adicao:hover,.botao-subtracao:hover{
+
+.botao-divisao:hover,
+.botao-adicao:hover,
+.botao-subtracao:hover {
     transition: 0.1s;
     opacity: 0.7;
 }
-.botao-reset{
+
+.botao-reset {
     font-family: title;
     margin: 5px;
     background-color: #605c5c;
-   
     border: none;
     width: 300px;
     height: 80px;
-    margin-left:25px;
+    margin-left: 25px;
     font-size: 350%;
     color: black;
-
 }
-.botao-reset:hover{
+
+.botao-reset:hover {
     transition: 0.1s;
     opacity: 0.7;
 }
-.calc{
+
+.calc {
     display: flex;
     flex-wrap: wrap;
     width: 85%;
     justify-content: center;
     align-items: center;
 }
-.calc > .botao3{
+
+.calc>.botao3 {
     align-items: flex-end;
 }
 
 @media (max-width: 768px) {
-    body{
+    body {
         background-size: cover;
         background-color: black;
         background-image: url("../img/2015-03-16_0002.png");
@@ -142,63 +152,81 @@ body {
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -ms-background-size: cover;
-        -o-background-size: cover; 
-    }    
-    nav{
+        -o-background-size: cover;
+    }
+
+    nav {
         justify-content: center;
     }
-    #interativo{
+
+    #interativo {
         margin-top: -0px;
         display: block;
         margin-left: -23px
-
     }
-    .logosum{
+
+    .logosum {
         display: none;
         opacity: 0;
     }
+
     .menu {
         display: none;
     }
+
     article label {
         display: block;
     }
+
     footer {
         flex-wrap: wrap;
     }
+
     .footer-col {
         width: 100%;
         margin-top: 20px;
     }
+
     .last,
     .first {
         justify-content: center;
     }
+
     #logo-footer {
         display: none;
     }
+
     .iconinter {
         color: white;
         font-size: 30px;
         padding: 15px;
     }
+
     main {
         padding: 30px;
     }
+
     main p {
         padding: 20px 30px;
     }
-    .barra{
+
+    .barra {
         display: block;
     }
-    .botao,.botao2,.botao3,.botao4,.botao5{
+
+    .botao,
+    .botao2,
+    .botao3,
+    .botao4,
+    .botao5 {
         font-size: 35px;
         width: 60px;
         height: 60px;
-        margin-bottom:10px; 
+        margin-bottom: 10px;
         position: relative;
     }
-    .visor25{
+
+    .visor25 {
         width: 330px;
     }
-    }
+}

@@ -22,19 +22,19 @@
         <input type="button" class="botao" value="7" onclick="preencher(value);" />
         <input type="button" class="botao" value="8" onclick="preencher(value);" />
         <input type="button" class="botao" value="9" onclick="preencher(value);" />
-        <input type="button" class="botao-divisao" value="/" onclick="preencher(value);" /><br>
+        <input type="button" class="botao-divisao" value="/" onclick="preencher(value);" />
         <input type="button" class="botao" value="4" onclick="preencher(value);" />
         <input type="button" class="botao" value="5" onclick="preencher(value);" />
         <input type="button" class="botao" value="6" onclick="preencher(value);" />
-        <input type="button" class="botao-multiplicacao" value="*" onclick="preencher(value);" /> <br>
+        <input type="button" class="botao-multiplicacao" value="*" onclick="preencher(value);" /> 
         <input type="button" class="botao" value="1" onclick="preencher(value);" />
         <input type="button" class="botao" value="2" onclick="preencher(value);" />
         <input type="button" class="botao" value="3" onclick="preencher(value);" />
-        <input type="button" class="botao-subtracao" value="-" onclick="preencher(value);" /><br>
+        <input type="button" class="botao-subtracao" value="-" onclick="preencher(value);" />
         <input type="button" class="botao-reset" value="C" onclick="reset(value);" />
         <input type="button" class="botao" value="0" onclick="preencher(value);" />
         <input type="button" class="botao-igualdade" value="=" onclick="calcular(value);" />
-        <input type="button" class="botao-adicao" value="+" onclick="preencher(value);" /> <br>
+        <input type="button" class="botao-adicao" value="+" onclick="preencher(value);" /> 
 
 
 
@@ -43,22 +43,6 @@
 
     </form>
 </body>
-<script>
-    function preencher(valor) {
-        document.getElementById("visor").value += valor;
-
-    }
-
-    function calcular() {
-        var resultado = 0;
-        resultado = document.getElementById("visor").value;
-        // document.getElementById("visor").value="";
-        document.getElementById("visor").value = eval(resultado);
-    }
-
-    function reset() {
-        document.getElementById("visor").value = "";
-    }
-</script>
+<script src="./script.js"></script>
 
 </html>
