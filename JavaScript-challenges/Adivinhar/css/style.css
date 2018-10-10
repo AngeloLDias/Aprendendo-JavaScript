@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #333;
+}
+#contador{
+    /* color: azure; */
+    font-size: 80px;
+}
+.advinhar{
+    margin: 30px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+}
+.n1En2{
+    display: flex;
+    justify-content: center;
+}
+#n1{
+    font-size: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 250px;
+    height: 250px;
+    margin-right: 5px;
+}
+#n2{
+    border: none;
+    font-size: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 250px;
+    height: 250px;
+}
+
+#btnVereficar{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height:100px;
+}
