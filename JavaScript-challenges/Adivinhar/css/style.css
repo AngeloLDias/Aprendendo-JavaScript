@@ -77,3 +77,33 @@ h1 {
 .rFalse {
     color: red;
 }
+
+.content-contador{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.body-contador{
+    width: 100px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid yellow;
+    border-radius: 15px;
+}
+
+.corretos{
+    color: #4DBB3E;
+    font-size: 25px;
+}
+
+@keyframes animationContador{
+    0%{font-size: 25px}
+    50%{font-size: 35px}
+    100%{font-size: 25px}
+}
+.animationContador{
+    animation: animationContador linear 0.44s;
+}
