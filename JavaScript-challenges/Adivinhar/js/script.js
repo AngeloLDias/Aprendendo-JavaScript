@@ -15,20 +15,20 @@ window.addEventListener('input', function () {
         resultado.classList.add('rFalse');
 
     }
-
+    0
 })
 
 function reset() {
-    setTimeout( function (){
-    document.getElementById('n2').value = "";
-    var num1 = Math.floor(Math.random() * 100);
-    document.getElementById('n1').innerHTML = num1;
+    setTimeout(function () {
+        document.getElementById('n2').value = "";
+        var num1 = Math.floor(Math.random() * 100);
+        document.getElementById('n1').innerHTML = num1;
     }
-    , 800)
+        , 800)
 }
 
-function somarContador(){
-    setTimeout( function(){
+function somarContador() {
+    setTimeout(function () {
         var correto = document.querySelector(".corretos");
         var valorInteiro = parseInt(correto.textContent);
         var soma = parseInt(valorInteiro) + parseInt(1);
@@ -36,7 +36,20 @@ function somarContador(){
     }, 450);
     var correto = document.querySelector(".corretos");
     correto.classList.add("animationContador");
-    setTimeout(function(){
+    setTimeout(function () {
         correto.classList.remove("animationContador")
     }, 440)
+}
+
+function timing() {
+    debugger;
+    var timeContent = document.querySelector(".numberTime");
+    var valorTime = parseInt(timeContent.textContent);
+    setTimeout(function () {
+        for (var i = 10; i > 0; i--) {
+            debugger;
+            var menosUm = valorTime - 1;
+            timeContent.textContent = menosUm;
+        }
+    }, 100)
 }
