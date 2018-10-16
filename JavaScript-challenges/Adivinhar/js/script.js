@@ -44,11 +44,12 @@ function somarContador() {
 function timing() {
     var timeContent = document.querySelector(".numberTime");
     var valorTime = parseInt(timeContent.textContent);
+    var timeOut = 0;
         for (var i = 10; i > 0; i--) {
+            timeOut++;
             setTimeout(function(){   
-                var menosUm = valorTime - 1;
-                timeContent.textContent = menosUm;
-                valorTime = menosUm;
-            }, 1000)
+                valorTime--;
+                timeContent.textContent = valorTime;
+            }, timeOut*1000);
         }
 }
