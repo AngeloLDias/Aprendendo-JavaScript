@@ -42,14 +42,13 @@ function somarContador() {
 }
 
 function timing() {
-    debugger;
     var timeContent = document.querySelector(".numberTime");
     var valorTime = parseInt(timeContent.textContent);
-    setTimeout(function () {
         for (var i = 10; i > 0; i--) {
-            debugger;
-            var menosUm = valorTime - 1;
-            timeContent.textContent = menosUm;
+            setTimeout(function(){   
+                var menosUm = valorTime - 1;
+                timeContent.textContent = menosUm;
+                valorTime = menosUm;
+            }, 1000)
         }
-    }, 100)
 }
