@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#VisorCep{
+    opacity: 0.5;
+}
+input{
+    padding: 12px 0px;
+    font-size: 24px;
+    text-align: center;
+    width: 392px;    
+ }
+ .preecherAuto, #VisorCep{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 392px;
+     /* margin-top: 5px; */
+ }
