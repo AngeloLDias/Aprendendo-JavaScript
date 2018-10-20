@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,25 +10,53 @@
 </head>
 
 <body>
-    <h3>Cep:</h3>
-    <input id="VisorCep" type="text" onfocus="this.value = '';" onblur="this.value = 'Digite seu CEP';" 
-    value="Digite seu CEP">
+  
 
     <div class="preecherAuto">
-        <h3>Bairro:</h3>
+        <p>Nome:</p>
+        <input class="nome" type="text" value="">
+        <p>Numero:</p>
+        <input class="numero" type="text" value="">
+        <p>Cep:</p>
+        <input id="VisorCep" type="text">       
+        <p>Bairro:</p>
         <input class="bairro" readonly="true" type="text" value="">
-        <h3>Localidade:</h3>
+        <p>Localidade:</p>
         <input class="localidade" readonly="true" type="text" value="">
-        <h3>Logradouro:</h3>
+        <p>Logradouro:</p>
         <input class="logradouro" readonly="true" type="text" value="">
-        <h3>UF:</h3>        
+        <p>UF:</p>        
         <input class="uf" type="text" readonly="true" value="">
 
     </div>
 
+<table>
+    <thead>
+        <tr>
+            <td>CEP</td>
+            <td>NOME</td>
+            <td>BAIRRO</td>
+            <td>LOCALIDADE</td>
+            <td>LOGRADOURO</td>
+            <td>UF</td>
+            <td>NUMERO</td>
+        </tr>
+    </thead>
+    <Tbody>
+        <tr>
+            <td class="CEP"></td>
+            <td class="NOME"></td>
+            <td class="BAIRRO"></td>
+            <td class="LOCALIDADE"></td>
+            <td class="LOGRADOURO"></td>
+            <td class="UF"></td>
+            <td class="NUMERO"></td>
+        </tr>
+    </Tbody>
+</table>
+
     <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/script.js"></script>
 </body>
 
 </html>
