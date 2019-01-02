@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+table tbody {
+  border: red;
+  width: 200px;
+  height: 50px; }
+  table tbody tr {
+    border: red; }
+
+/*# sourceMappingURL=style.css.map */
